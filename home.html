@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skv ToDo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--this is link for icons-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!--main container-->
+    <main class="main-container">
+        <!--container for app-->
+      <section class="app">
+        <!--display  container for image and time-->
+        <div class="display">
+          <div class="hoveringDisplay">
+            <h3 id="app-title">Skv Tasks App</h3>
+
+            <h3 id="today">today</h3>
+          </div>
+        </div>
+        <!--input section -->
+        <div class="inputField">
+          <input type="text" placeholder="Add a new task" />
+          <button><i class="uil uil-plus-circle"></i></button>
+        </div>
+        <!--all pending completed tab section-->
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          <button class="clearAllTask">Clear All</button>
+        </div>
+        <!--list container where user data added-->
+        <ul class="task-box"></ul>
+        <!--footer for task left section--> 
+        <div class="footer">
+          You have <span id="left">0</span> pending tasks
+        </div>
+      </section>
+      
+    </main>
+    <!--script-->
+    <script src="script.js"></script>
+  </body>
+</html>
