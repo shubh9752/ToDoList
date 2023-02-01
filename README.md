@@ -7,3 +7,6 @@ features of this app:
 -delete tasks
 -check pending tasks
 -delete all tasks
+
+Demo Link:-
+https://shubh9752.github.io/ToDoList/
